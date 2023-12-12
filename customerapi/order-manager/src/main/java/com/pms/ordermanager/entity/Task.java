@@ -8,6 +8,10 @@ import jakarta.persistence.Id;
 @Entity
 public class Task {
 
+    public Task() {
+
+    }
+
     public Task(String resource, int amount) {
         this.resource = resource;
         this.amount = amount;
@@ -25,7 +29,7 @@ public class Task {
         return this.id;
     }
 
-    public String resource() {
+    public String getResource() {
         return this.resource;
     }
 
